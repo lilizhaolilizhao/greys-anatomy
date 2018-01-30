@@ -8,7 +8,6 @@ import java.util.ArrayDeque;
 import java.util.IdentityHashMap;
 
 
-
 /**
  * 计算一个对象的大小
  * Created by vlinux on 15/12/10.
@@ -188,6 +187,6 @@ public class SizeOf {
     public String toString() {
         if (size < 1024) return size + " B";
         int z = (63 - Long.numberOfLeadingZeros(size)) / 10;
-        return String.format("%.1f %sB", (double)size / (1L << (z*10)), " KMGTPE".charAt(z));
+        return String.format("%.1f %sB", (double) size / (1L << (z * 10)), " KMGTPE".charAt(z));
     }
 }

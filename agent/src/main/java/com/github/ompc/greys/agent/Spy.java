@@ -28,7 +28,7 @@ public class Spy {
      */
     public static void init(
             @Deprecated
-            ClassLoader classLoader,
+                    ClassLoader classLoader,
             Method onBeforeMethod,
             Method onReturnMethod,
             Method onThrowsMethod,
@@ -48,7 +48,7 @@ public class Spy {
      */
     public static void initForAgentLauncher(
             @Deprecated
-            ClassLoader classLoader,
+                    ClassLoader classLoader,
             Method onBeforeMethod,
             Method onReturnMethod,
             Method onThrowsMethod,

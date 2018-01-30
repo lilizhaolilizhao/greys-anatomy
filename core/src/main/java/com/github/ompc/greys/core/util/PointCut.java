@@ -20,8 +20,8 @@ public class PointCut {
     /**
      * 构造切入点
      *
-     * @param classMatcher      类匹配
-     * @param gaMethodMatcher   方法匹配
+     * @param classMatcher    类匹配
+     * @param gaMethodMatcher 方法匹配
      */
     public PointCut(Matcher<Class<?>> classMatcher, Matcher<GaMethod> gaMethodMatcher) {
         this(classMatcher, gaMethodMatcher, true);

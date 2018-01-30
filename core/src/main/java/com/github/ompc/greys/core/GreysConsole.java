@@ -56,7 +56,6 @@ public class GreysConsole {
 
 
     public GreysConsole(InetSocketAddress address) throws IOException {
-
         this.console = initConsoleReader();
         this.history = initHistory();
 
@@ -135,7 +134,6 @@ public class GreysConsole {
 
 
     private void disableSilentOfSession() throws IOException {
-
         socketWriter.write("session -s false\n");
         socketWriter.flush();
         waitingForEOT();
@@ -294,9 +292,4 @@ public class GreysConsole {
         closeQuietly(socket);
         console.shutdown();
     }
-
-    public static void main(String... args) throws IOException {
-        new GreysConsole(new InetSocketAddress(args[0], Integer.valueOf(args[1])));
-    }
-
 }
