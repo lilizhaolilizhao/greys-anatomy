@@ -56,6 +56,7 @@ public class GaCheckUtils {
     }
 
 
+
     public static boolean $(String str) {
         return isIn(str,
                 new String(new byte[]{0x6a, 0x75, 0x6c, 0x79}),

@@ -35,7 +35,7 @@ JVM_OPS="";
 OPTION_CHECK_PERMISSION=1
 
 # the option to control greys.sh update version if necessary
-OPTION_UPDATE_IF_NECESSARY=0
+OPTION_UPDATE_IF_NECESSARY=1
 
 # the option to control greys.sh attach target jvm
 OPTION_ATTACH_JVM=1

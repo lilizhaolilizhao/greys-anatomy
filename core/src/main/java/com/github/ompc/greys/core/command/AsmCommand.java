@@ -183,7 +183,7 @@ public class AsmCommand implements Command {
                 final Collection<Class<?>> matchedClassSet = reflectManager.searchClass(new ClassMatcher(classNameMatcher));
                 final AsmAffect asmAffect = Enhancer.getClassByteArray(matchedClassSet, inst);
 
-                for (AsmAffect.ClassInfo classInfo : asmAffect.getClassInfos()) {
+                for( AsmAffect.ClassInfo classInfo : asmAffect.getClassInfos() ) {
 
                     final Class<?> clazz = classInfo.getClazz();
                     final ClassLoader loader = classInfo.getLoader();

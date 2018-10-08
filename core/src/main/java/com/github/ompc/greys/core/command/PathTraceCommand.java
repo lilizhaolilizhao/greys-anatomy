@@ -215,7 +215,7 @@ public class PathTraceCommand implements Command {
                                 });
 
                                 // top invoke
-                                if (entity.deep <= 0) {
+                                if(entity.deep <= 0) {
                                     topInvokeCost.begin();
                                 }
 

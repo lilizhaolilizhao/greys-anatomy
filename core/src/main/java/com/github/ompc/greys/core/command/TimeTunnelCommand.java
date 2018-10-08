@@ -29,7 +29,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 import static com.github.ompc.greys.core.Advice.newForAfterRetuning;
 import static com.github.ompc.greys.core.Advice.newForAfterThrowing;
 import static com.github.ompc.greys.core.util.Express.ExpressFactory.newExpress;
-import static com.github.ompc.greys.core.util.GaStringUtils.*;
+import static com.github.ompc.greys.core.util.GaStringUtils.getStack;
+import static com.github.ompc.greys.core.util.GaStringUtils.getThreadInfo;
+import static com.github.ompc.greys.core.util.GaStringUtils.newString;
 import static java.lang.String.format;
 import static org.apache.commons.lang3.StringUtils.*;
 

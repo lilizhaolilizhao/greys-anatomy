@@ -1,8 +1,8 @@
 package com.github.ompc.greys.core.textui.ext;
 
+import com.github.ompc.greys.core.textui.TLadder;
 import com.github.ompc.greys.core.textui.TComponent;
 import com.github.ompc.greys.core.textui.TKv;
-import com.github.ompc.greys.core.textui.TLadder;
 import com.github.ompc.greys.core.textui.TTable;
 
 import java.lang.annotation.Annotation;

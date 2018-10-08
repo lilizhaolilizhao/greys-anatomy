@@ -45,7 +45,7 @@ public class TObject implements TComponent {
             } else {
                 return newString(object);
             }
-        } catch (Throwable t) {
+        } catch(Throwable t) {
             return "ERROR DATA!!!";
         }
     }

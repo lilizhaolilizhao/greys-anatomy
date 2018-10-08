@@ -77,14 +77,14 @@ public class TKv implements TComponent {
 
     public static void main(String... args) {
 
-        final TKv tKv = new TKv(new TTable.ColumnDefine(TTable.Align.RIGHT), new TTable.ColumnDefine(10, false, TTable.Align.LEFT));
-        tKv.add("KEY-1", "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-        tKv.add("KEY-2", "1234567890");
-        tKv.add("KEY-3", "1234567890");
+        final TKv tKv = new TKv(new TTable.ColumnDefine(TTable.Align.RIGHT),new TTable.ColumnDefine(10,false, TTable.Align.LEFT));
+        tKv.add("KEY-1","ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+        tKv.add("KEY-2","1234567890");
+        tKv.add("KEY-3","1234567890");
 
         final TTable tTable = new TTable(new TTable.ColumnDefine[]{
                 new TTable.ColumnDefine(),
-                new TTable.ColumnDefine(20, false, TTable.Align.LEFT)
+                new TTable.ColumnDefine(20,false, TTable.Align.LEFT)
         });
 
         tTable.addRow("OPTIONS", tKv.rendering());

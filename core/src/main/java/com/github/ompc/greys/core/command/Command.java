@@ -64,7 +64,6 @@ public interface Command {
 
         /**
          * 获取增强功能点
-         *
          * @return
          */
         PointCut getPointCut();
@@ -98,7 +97,7 @@ public interface Command {
          *
          * @param session 会话
          * @param inst    inst
-         * @param printer 信息发送者
+         * @param printer  信息发送者
          * @return 类增强
          * @throws Throwable 动作执行出错
          */
@@ -116,7 +115,7 @@ public interface Command {
          *
          * @param session 会话
          * @param inst    inst
-         * @param printer 信息发送者
+         * @param printer  信息发送者
          * @throws Throwable 动作执行出错
          */
         void action(Session session, Instrumentation inst, Printer printer) throws Throwable;
@@ -134,7 +133,7 @@ public interface Command {
          *
          * @param session 会话
          * @param inst    inst
-         * @param printer 信息发送者
+         * @param printer  信息发送者
          * @return 影响范围
          * @throws Throwable 动作执行出错
          */

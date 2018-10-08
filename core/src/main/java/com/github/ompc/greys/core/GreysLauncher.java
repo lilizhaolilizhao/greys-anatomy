@@ -5,6 +5,7 @@ import joptsimple.OptionSet;
 
 import java.util.List;
 
+import static com.github.ompc.greys.core.util.GaStringUtils.getCauseMessage;
 import static java.io.File.separator;
 import static java.lang.System.getProperty;
 
@@ -98,5 +99,15 @@ public class GreysLauncher {
             }
         }
 
+    }
+
+
+    public static void main(String[] args) {
+        try {
+            new GreysLauncher(args);
+        } catch (Throwable t) {
+            System.err.println("start greys failed, because : " + getCauseMessage(t));
+            System.exit(-1);
+        }
     }
 }

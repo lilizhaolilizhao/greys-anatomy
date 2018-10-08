@@ -3,8 +3,7 @@ package com.github.ompc.greys.core.util.affect;
 import com.github.ompc.greys.core.GlobalOptions;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Collection;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static java.lang.String.format;
