@@ -150,6 +150,7 @@ public class GreysConsole {
     }
 
     private ConsoleReader initConsoleReader() throws IOException {
+        System.setProperty("jline.WindowsTerminal.directConsole", "false");
         final ConsoleReader console = new ConsoleReader(System.in, System.out);
 
         console.getKeys().bind("" + CTRL_D, new ActionListener() {
